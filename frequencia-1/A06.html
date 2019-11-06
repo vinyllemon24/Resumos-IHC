@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 6</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="aula-6">Aula 6</h1>
+<ul>
+<li><a href="#aula-6">Aula 6</a></li>
+<li><a href="#intera%c3%a7%c3%a3o">Interação</a>
+<ul>
+<li><a href="#defini%c3%a7%c3%b5es">Definições</a></li>
+<li><a href="#modelo-de-donald-norman">Modelo de Donald Norman</a>
+<ul>
+<li><a href="#golfo-de-execu%c3%a7%c3%a3o">Golfo de Execução</a></li>
+<li><a href="#golfo-de-avalia%c3%a7%c3%a3o">Golfo de Avaliação</a></li>
+<li><a href="#utiliza%c3%a7%c3%a3o-do-modelo-de-norman">Utilização do Modelo de Norman</a></li>
+</ul>
+</li>
+<li><a href="#framework-de-abowd-e-beale"><em>Framework</em> de Abowd e Beale</a>
+<ul>
+<li><a href="#passos-de-itera%c3%a7%c3%a3o">Passos de Iteração</a></li>
+<li><a href="#tradu%c3%a7%c3%b5es-de-intera%c3%a7%c3%a3o">Traduções de Interação</a></li>
+<li><a href="#utiliza%c3%a7%c3%a3o-do-modelo-de-abowd-e-beale">Utilização do Modelo de Abowd e Beale</a></li>
+</ul>
+</li>
+<li><a href="#ergonomia-de-intera%c3%a7%c3%a3o">Ergonomia de Interação</a>
+<ul>
+<li><a href="#exemplos">Exemplos</a></li>
+</ul>
+</li>
+<li><a href="#tipos-de-interfaces">Tipos de interfaces</a>
+<ul>
+<li><a href="#interfaces-industriais-e-escrit%c3%b3rio">Interfaces Industriais e Escritório</a></li>
+<li><a href="#glass-interface"><em>Glass Interface</em></a></li>
+</ul>
+</li>
+<li><a href="#manipula%c3%a7%c3%a3o-direta-e-indireta">Manipulação Direta e Indireta</a></li>
+</ul>
+</li>
+<li><a href="#conceitos-b%c3%a1sicos-de-design-de-intera%c3%a7%c3%a3o">Conceitos Básicos de <em>Design</em> de Interação</a>
+<ul>
+<li><a href="#o-que-%c3%a9-design">O que é <em>Design</em>?</a></li>
+<li><a href="#intera%c3%a7%c3%b5es-e-interven%c3%a7%c3%b5es">Interações e Intervenções</a></li>
+<li><a href="#regra-de-ouro-de-design">Regra de Ouro de <em>Design</em></a></li>
+<li><a href="#processo-de-design">Processo de <em>Design</em></a>
+<ul>
+<li><a href="#notas">Notas:</a></li>
+</ul>
+</li>
+<li><a href="#conhecer-o-utilizador">Conhecer o Utilizador</a>
+<ul>
+<li><a href="#sondas-culturais">Sondas Culturais</a></li>
+<li><a href="#persona"><em>Persona</em></a></li>
+</ul>
+</li>
+<li><a href="#cen%c3%a1rios">Cenários</a></li>
+</ul>
+</li>
+<li><a href="#design-de-navega%c3%a7%c3%a3o"><em>Design</em> de Navegação</a>
+<ul>
+<li><a href="#estrutura">Estrutura</a></li>
+<li><a href="#quatro-regras-de-ouro">Quatro Regras de Ouro</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="intera%c3%a7%c3%a3o">Interação</h1>
+<blockquote>
+<p>Interação é a comunicação entre o utilizador e o sistema.</p>
+</blockquote>
+<h2 id="defini%c3%a7%c3%b5es">Definições</h2>
+<ul>
+<li><strong>Domínio</strong> — Área a ser estudada;</li>
+<li><strong>Objetivo</strong> — O que nós queremos realizar;</li>
+<li><strong>Tarefa</strong> — Como nós vamos completar um objetivo em operações ou ações.</li>
+</ul>
+<h2 id="modelo-de-donald-norman">Modelo de Donald Norman</h2>
+<p>Consiste de sete etapas:</p>
+<ul>
+<li><strong>Objetivo</strong>:</li>
+</ul>
+<ol>
+<li>Estabelecer o objetivo;</li>
+</ol>
+<ul>
+<li><strong>Execução</strong>:</li>
+</ul>
+<ol start="2">
+<li>Formular intenção;</li>
+<li>Especificar ação;</li>
+<li>Executar ação;</li>
+</ol>
+<ul>
+<li><strong>Avaliação</strong>:</li>
+</ul>
+<ol start="5">
+<li>Observar estado do sistema;</li>
+<li>Interpretar estado do sistema;</li>
+<li>Avaliar resultado.</li>
+</ol>
+<p>Alguns sistemas são mais difíceis de utilizar do que outros.</p>
+<h3 id="golfo-de-execu%c3%a7%c3%a3o">Golfo de Execução</h3>
+<p>Diferença entre as intenções do utilizador e as ações permitidas no sistema.</p>
+<h3 id="golfo-de-avalia%c3%a7%c3%a3o">Golfo de Avaliação</h3>
+<p>Esforço que o utilizador deve exercer para interpretar o estado físico do sistema e determinar se as expectativas e intenções foram cumpridas.</p>
+<h3 id="utiliza%c3%a7%c3%a3o-do-modelo-de-norman">Utilização do Modelo de Norman</h3>
+<p>Deslizes/Falhas/Faltas:</p>
+<ul>
+<li>Compreensão do sistema e do objetivo;</li>
+<li>Formulação correta da ação;</li>
+<li>Ação incorreta.</li>
+</ul>
+<p>Enganos:</p>
+<ul>
+<li>Utilizador pode não ter o objetivo correto.</li>
+</ul>
+<p>Como corrigir:</p>
+<ul>
+<li><strong>Deslizes</strong>: melhor design de interface;</li>
+<li><strong>Enganos</strong>: melhor compreensão do sistema.</li>
+</ul>
+<h2 id="framework-de-abowd-e-beale"><em>Framework</em> de Abowd e Beale</h2>
+<blockquote>
+<p>Identifica componentes do sistema e de utilizador que comunicam através de <em>input</em> e <em>output</em> de uma interface.</p>
+<p>Permite uma avaliação cíclica da sequência de passos desde a articulação da tarefa (através da <em>performance</em> do sistema e apresentação da tarefa) até à observação do utilizador dos resultados da tarefa realizada, sobre os quais se vão formular novas tarefas.</p>
+</blockquote>
+<p>Esta <em>framework</em> introduz linguagens para <em>input</em> e <em>output</em> para além das linguagens de sistema e de tarefas. Ao concentrar na tradução entre estas linguagens, a <em>framework</em> de interação permite-nos determinar se os conceitos estão a ser comunicados corretamente.</p>
+<h3 id="passos-de-itera%c3%a7%c3%a3o">Passos de Iteração</h3>
+<p>A <em>framework</em> identifica 4 passos no ciclo de interação:</p>
+<ul>
+<li>O <strong>utilizador</strong> formula o objetivo e a tarefa que pretende realizar;</li>
+<li>A <strong>interface</strong> traduz a linguagem de input em linguagem do sistema;</li>
+<li>O <strong>sistema</strong> altera o seu estado;</li>
+<li>O sistema renderiza o novo estado na linguagem de <strong>output</strong>, que é transmitida ao utilizador.</li>
+</ul>
+<h3 id="tradu%c3%a7%c3%b5es-de-intera%c3%a7%c3%a3o">Traduções de Interação</h3>
+<p>As quatro traduções envolvidas na <em>framework</em> de interação são:</p>
+<ol>
+<li><strong>Articulação</strong> — intenções do utilizador são traduzidas em ações na interface;</li>
+<li><strong><em>Performance</em></strong> — Ações na interface são traduzidas em alterações do estado do sistema;</li>
+<li><strong>Apresentação</strong> — Alterações do sistema são traduzidas no <em>display</em> de output;</li>
+<li><strong>Observação</strong> — Output interpretado pelo utilizador.</li>
+</ol>
+<h3 id="utiliza%c3%a7%c3%a3o-do-modelo-de-abowd-e-beale">Utilização do Modelo de Abowd e Beale</h3>
+<p><em>Framework</em> geral para perceber interação:</p>
+<ul>
+<li>Não é limitada a sistemas computacionais;</li>
+<li>Identifica todas as componentes envolvidas na interação;</li>
+<li>Permite comparação de avaliação entre sistemas;</li>
+<li>Modelo abstrato.</li>
+</ul>
+<h2 id="ergonomia-de-intera%c3%a7%c3%a3o">Ergonomia de Interação</h2>
+<ul>
+<li>Estudo das características físicas da interação;</li>
+<li>Também conhecido como fatores humanos;</li>
+<li>Útil para definir padrões e guias para constranger o <em>design</em> de certos aspetos de sistemas.</li>
+</ul>
+<h3 id="exemplos">Exemplos</h3>
+<ul>
+<li><strong>Disposição de controlos e <em>displays</em></strong> — controlos agrupados de acordo com funcionalidade;</li>
+<li><strong>Ambiente envolvente</strong></li>
+<li>Problemas de saúde — condições ambientais, posição física;</li>
+<li><strong>Uso de cor</strong> — uso de vermelho como forma de aviso.</li>
+</ul>
+<h2 id="tipos-de-interfaces">Tipos de interfaces</h2>
+<h3 id="interfaces-industriais-e-escrit%c3%b3rio">Interfaces Industriais e Escritório</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">Escritório</th>
+<th style="text-align:left">Industriais</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Tipo de dados</td>
+<td style="text-align:left">Texto</td>
+<td style="text-align:left">Numérico</td>
+</tr>
+<tr>
+<td style="text-align:left">Ritmo de mudança</td>
+<td style="text-align:left">Lento</td>
+<td style="text-align:left">Rápido</td>
+</tr>
+<tr>
+<td style="text-align:left">Ambiente</td>
+<td style="text-align:left">Limpo</td>
+<td style="text-align:left">Sujo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glass-interface"><em>Glass Interface</em></h3>
+<p>Vantagens:</p>
+<ul>
+<li>Barata;</li>
+<li>Flexivel;</li>
+<li>Múltiplas representações;</li>
+<li>Valores precisos.</li>
+</ul>
+<p>Desvantagens:</p>
+<ul>
+<li>Sem localização fisica;</li>
+<li>Perda de contexto;</li>
+<li>Interfaces complexas.</li>
+</ul>
+<p>Podem ser necessárias interfaces <em>Glass</em> e industriais.</p>
+<h2 id="manipula%c3%a7%c3%a3o-direta-e-indireta">Manipulação Direta e Indireta</h2>
+<p>Manipulação Direta:</p>
+<ul>
+<li><strong>Escritório</strong> — O utilizador manipula diretamente o sistema;</li>
+</ul>
+<p>Manipulação Indireta:</p>
+<ul>
+<li><strong>Industrial</strong> — O utilizador o sistema através de uma interface;</li>
+</ul>
+<h1 id="conceitos-b%c3%a1sicos-de-design-de-intera%c3%a7%c3%a3o">Conceitos Básicos de <em>Design</em>  de Interação</h1>
+<h2 id="o-que-%c3%a9-design">O que é <em>Design</em>?</h2>
+<blockquote>
+<p>Atingir objetivos dentro de dadas limitações.</p>
+</blockquote>
+<ul>
+<li>Objetivo — propósito:
+<ul>
+<li>Para quem é;</li>
+<li>Porque é que precisam do que estamos a desenhar.</li>
+</ul>
+</li>
+<li>Limitações:
+<ul>
+<li>Materiais;</li>
+<li>Plataformas.</li>
+</ul>
+</li>
+<li><em>Trade-offs</em> — bom vs. ótimo.</li>
+</ul>
+<h2 id="intera%c3%a7%c3%b5es-e-interven%c3%a7%c3%b5es">Interações e Intervenções</h2>
+<ul>
+<li><em>Design</em> de interações não se limita a interfaces e a interações imediatas;</li>
+<li><em>Design</em> de intervenções não se limita só a artifactos, também abrange documentação, manuais.</li>
+</ul>
+<h2 id="regra-de-ouro-de-design">Regra de Ouro de <em>Design</em></h2>
+<blockquote>
+<p>Compreender os materiais com que estamos a trabalhar.</p>
+</blockquote>
+<ul>
+<li>
+<p>Compreender computadores:</p>
+<ul>
+<li>Limitações, capacidades, ferramentas, plataformas.</li>
+</ul>
+</li>
+<li>
+<p>Compreender pessoas:</p>
+<ul>
+<li>Aspetos psicológicos e sociais;</li>
+<li>Erro humano.</li>
+</ul>
+</li>
+<li>
+<p>Compreender a interação entre pessoas e computadores.</p>
+</li>
+</ul>
+<h2 id="processo-de-design">Processo de <em>Design</em></h2>
+<ul>
+<li>
+<p><strong>Requisitos</strong> — determinar as necessidades do utilizador;</p>
+</li>
+<li>
+<p><strong>Analise</strong> — pesquisa, analise e ordenação de informação recolhida;</p>
+</li>
+<li>
+<p><em><strong>Design</strong></em> — Definir tarefas, seguir <em>guidelines</em> e aplicar avaliação heurística de modelos cognitivos;</p>
+</li>
+<li>
+<p><strong>Iteração e prototipagem</strong> — desenhar soluções de pequena escala de modo a testar ideias, descobrir falhas ou novas funcionalidades necessárias;</p>
+</li>
+<li>
+<p><strong>Implementação e entrega</strong> — entrega do produto final.</p>
+</li>
+</ul>
+<h3 id="notas">Notas:</h3>
+<blockquote>
+<ul>
+<li>Tempo limitado vai prejudicar o processo de <em>design</em></li>
+<li>Para além de encontrar problemas e resolve-los, é necessário decidir que problemas resolver;</li>
+<li>Um sistema perfeito é um sistema mal desenhado:
+<ul>
+<li>Um sistema muito bom implica demasiado esforço no <em>design</em>.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><s>(sounds fake, but ok)</s></p>
+<h2 id="conhecer-o-utilizador">Conhecer o Utilizador</h2>
+<ul>
+<li>Quem são eles?</li>
+<li>Os utilizadores são diferentes;</li>
+<li>Observar utilizadores e como eles interagem com o sistema;</li>
+<li>Questionar utilizadores.</li>
+</ul>
+<h3 id="sondas-culturais">Sondas Culturais</h3>
+<ul>
+<li>Técnica usada para inspirar o processo de <em>design</em>;</li>
+<li>É um meio de recolher informação sobre a vida, valores e pensamentos de pessoas;</li>
+<li>Cada pacote contêm mapas, câmaras ou diários acompanhados de tarefas que pedem ao participante para escrever eventos específicos, interações ou sentimentos;</li>
+<li>Têm como objetivo compreender os pensamentos e cultura do participante.</li>
+</ul>
+<h3 id="persona"><em>Persona</em></h3>
+<ul>
+<li>Descrição do tipo de utilizadores;</li>
+<li>Usar como utilizador suplente;</li>
+<li>Descrições detalhadas</li>
+</ul>
+<h2 id="cen%c3%a1rios">Cenários</h2>
+<p>Um cenário é um caminho linear do sistema.</p>
+<p>São utilizados para:</p>
+<ul>
+<li>Ajudar a comunicação entre clientes, <em>designers</em>, e utilizadores;</li>
+<li>Validar modelos.</li>
+<li>Exprimir dinâmicas, com descrições de aparência (vista estática) e comportamento (compreensão ativa).</li>
+</ul>
+<p>Cenários devem representar:</p>
+<ul>
+<li>O que os utilizadores vão quer fazer, é necessário ter que considerar a reação dos utilizadores a cada componente;</li>
+<li>Utilização passa a passo do sistema ou funcionalidade:
+<ul>
+<li>O que pode ser visto (<em>screenshots</em>);</li>
+<li>O que se pode fazer (<em>input</em> de rato ou teclado);</li>
+<li>O que os utilizadores estão a pensar.</li>
+</ul>
+</li>
+<li>Uso e reuso ao longo do <em>design</em>.</li>
+</ul>
+<p>Os cenários exploram:</p>
+<ul>
+<li>Interação;</li>
+<li>Cognição;</li>
+<li>Arquitetura do sistema.</li>
+</ul>
+<p>Vantagens:</p>
+<ul>
+<li>Fáceis de entender;</li>
+<li>Concretos (menos suscetíveis a erros).</li>
+</ul>
+<p>Desvantagens:</p>
+<ul>
+<li>Não oferecem escolhas ou condições especiais;</li>
+<li>Não representam casos não intencionais.</li>
+</ul>
+<h1 id="design-de-navega%c3%a7%c3%a3o"><em>Design</em> de Navegação</h1>
+<p>Existem 4 níveis de <em>design</em>:</p>
+<ul>
+<li>Escolha de <em>widgets</em>;</li>
+<li><em>Design</em> de ecrã;</li>
+<li><em>Design</em> de navegação na aplicação;</li>
+<li><em>Design</em> de ambiente.</li>
+</ul>
+<h2 id="estrutura">Estrutura</h2>
+<ul>
+<li>Dentro do ecrã;</li>
+<li>Local;</li>
+<li>Global — estrutura do site, movimento entre ecrãs</li>
+<li>Mais amplo — relação com outras aplicações.</li>
+</ul>
+<h2 id="quatro-regras-de-ouro">Quatro Regras de Ouro</h2>
+<ul>
+<li>Saber onde estamos;</li>
+<li>Saber o que podemos fazer;</li>
+<li>Saber o que vamos fazer ou o que vai acontecer;</li>
+<li>Saber onde já estivemos ou o que fizemos.</li>
+</ul>
+
+    </body>
+    </html>

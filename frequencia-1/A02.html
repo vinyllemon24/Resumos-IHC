@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 2</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body class="vscode-light">
+        <h1 id="aula-2">Aula 2</h1>
+<ul>
+<li><a href="#aula-2">Aula 2</a></li>
+<li><a href="#interpreta%c3%a7%c3%a3o-de-sinais-visuais">Interpretação de Sinais Visuais</a>
+<ul>
+<li><a href="#acuidade-visual">Acuidade Visual</a></li>
+<li><a href="#vis%c3%a3o-crom%c3%a1tica">Visão Cromática</a>
+<ul>
+<li><a href="#modelo-hsl-hue-saturation-lightness">Modelo HSL (<em>Hue, Saturation, Lightness</em>)</a></li>
+<li><a href="#modelo-hsv-hue-saturation-value">Modelo HSV (<em>Hue, Saturation, Value</em>)</a></li>
+</ul>
+</li>
+<li><a href="#processamento-visual">Processamento Visual</a>
+<ul>
+<li><a href="#tamanho">Tamanho</a></li>
+</ul>
+</li>
+<li><a href="#leitura-de-texto">Leitura de Texto</a></li>
+</ul>
+</li>
+<li><a href="#interpreta%c3%a7%c3%a3o-de-sinais-auditivos">Interpretação de Sinais Auditivos</a>
+<ul>
+<li><a href="#audi%c3%a7%c3%a3o-humana">Audição Humana</a></li>
+<li><a href="#constitui%c3%a7%c3%a3o-f%c3%adsica">Constituição Física</a></li>
+<li><a href="#som">Som</a></li>
+<li><a href="#processar-som">Processar Som</a></li>
+</ul>
+</li>
+<li><a href="#interpreta%c3%a7%c3%a3o-de-sinais-h%c3%a1pticos">Interpretação de Sinais Hápticos</a>
+<ul>
+<li><a href="#o-toque-humano">O Toque Humano</a></li>
+</ul>
+</li>
+<li><a href="#movimento">Movimento</a>
+<ul>
+<li><a href="#lei-de-fitt-1954">Lei de Fitt (1954)</a></li>
+<li><a href="#lei-de-hick-1952">Lei de Hick (1952)</a></li>
+</ul>
+</li>
+<li><a href="#mem%c3%b3ria">Memória</a>
+<ul>
+<li><a href="#mem%c3%b3ria-sensorial">Memória Sensorial</a></li>
+<li><a href="#mem%c3%b3ria-a-curto-prazo-stm">Memória a Curto Prazo (STM)</a></li>
+<li><a href="#mem%c3%b3ria-a-longo-prazo-ltm">Memória a Longo Prazo (LTM)</a>
+<ul>
+<li><a href="#estrutura-de-mem%c3%b3ria-sem%c3%a2ntica">Estrutura de Memória Semântica</a></li>
+<li><a href="#modelos-de-ltm">Modelos de LTM</a>
+<ul>
+<li><a href="#rede-sem%c3%a2ntica">Rede Semântica</a></li>
+<li><a href="#frames"><em>Frames</em></a></li>
+<li><a href="#regras">Regras</a></li>
+</ul>
+</li>
+<li><a href="#recupera%c3%a7%c3%a3o">Recuperação</a>
+<ul>
+<li><a href="#recordar">Recordar</a></li>
+<li><a href="#reconhecimento">Reconhecimento</a></li>
+</ul>
+</li>
+<li><a href="#armazenamento-de-informa%c3%a7%c3%a3o">Armazenamento de informação</a></li>
+<li><a href="#esquecimento">Esquecimento</a>
+<ul>
+<li><a href="#decad%c3%aancia">Decadência</a></li>
+<li><a href="#interfer%c3%aancia">Interferência</a></li>
+</ul>
+</li>
+<li><a href="#transfer%c3%aancias-de-mem%c3%b3ria">Transferências de Memória</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="interpreta%c3%a7%c3%a3o-de-sinais-visuais">Interpretação de Sinais Visuais</h1>
+<h2 id="acuidade-visual">Acuidade Visual</h2>
+<p>Habilidade de uma pessoa distinguir detalhes.</p>
+<h2 id="vis%c3%a3o-crom%c3%a1tica">Visão Cromática</h2>
+<p>Composta por 3 componentes, dependem do modelo cromático a escolhido.</p>
+<h3 id="modelo-hsl-hue-saturation-lightness">Modelo HSL (<em>Hue, Saturation, Lightness</em>)</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/HSL_color_solid_cylinder_saturation_gray.png" width="500">
+<h3 id="modelo-hsv-hue-saturation-value">Modelo HSV (<em>Hue, Saturation, Value</em>)</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/HSV_color_solid_cylinder_saturation_gray.png" width="500">
+<h2 id="processamento-visual">Processamento Visual</h2>
+<ul>
+<li>Ação do cérebro na significância do sinal de <em>input</em> visual;</li>
+<li>O que nós vemos é uma interpretação guiada pelas nossas expectativas (ex.: noção de tamanho constante).</li>
+</ul>
+<h3 id="tamanho">Tamanho</h3>
+<ul>
+<li>Objetos <strong>mesmo tamanho</strong> a distâncias diferentes têm ângulos visuais diferentes;</li>
+<li>Objetos de <strong>tamanho diferente</strong> posicionados à distância diferente correta vão ter o mesmo ângulo visual, ao olho do observador.</li>
+</ul>
+<blockquote>
+<p>Uma avaliação correta do mundo requer conhecimento do utilizador.</p>
+</blockquote>
+<h2 id="leitura-de-texto">Leitura de Texto</h2>
+<ul>
+<li>
+<p>O olho humano efetua movimentos rápidos (<strong>sacadas</strong>) e pausas (<strong>fixações</strong>);</p>
+</li>
+<li>
+<p>Informação é recolhida durante as fixações, existem cerca de 3 a 5 por linha de texto;</p>
+</li>
+<li>
+<p>Existem também <strong>regressões</strong> no movimento do olho:</p>
+<ul>
+<li>Texto complexo implica mais <strong>regressões</strong>.</li>
+</ul>
+</li>
+<li>
+<p>A velocidade média de leitura para um adulto é <strong>250 palavras/minuto</strong>;</p>
+</li>
+<li>
+<p>Ler de um computador é mais moroso do que ler de um livro;</p>
+</li>
+<li>
+<p>É mais fácil ler letras pretas com fundo branco:</p>
+<ul>
+<li>Maior luminância implica melhor acuidade.</li>
+</ul>
+</li>
+<li>
+<p>Tamanhos diferentes de letras podem ser iguais com o espaçamento correto.</p>
+</li>
+</ul>
+<h1 id="interpreta%c3%a7%c3%a3o-de-sinais-auditivos">Interpretação de Sinais Auditivos</h1>
+<h2 id="audi%c3%a7%c3%a3o-humana">Audição Humana</h2>
+<p>O pavilhão auditivo atua como funil que canaliza o som para dentro do ouvido.</p>
+<p>Somos capazes de estimar distâncias devido a atrasos na receção entre os dois ouvidos.</p>
+<p>Fornece informação valiosa sobre o ambiente, como por exemplo:</p>
+<ul>
+<li>Distâncias;</li>
+<li>Direções;</li>
+</ul>
+<h2 id="constitui%c3%a7%c3%a3o-f%c3%adsica">Constituição Física</h2>
+<ul>
+<li>Ouvido <strong>externo</strong> — protege o interior e amplifica o som;</li>
+<li>Ouvido <strong>médio</strong> — transmite ondas de som como vibrações para o ouvido interno;</li>
+<li>Ouvido <strong>interno</strong> — transmissores químicos causam impulsos no nervo auditório.</li>
+</ul>
+<h2 id="som">Som</h2>
+<ul>
+<li><strong>Tom</strong> — frequência (Hz);</li>
+<li><strong>Sonoridade</strong> — amplitude (dB);</li>
+<li><strong>Timbre</strong> — tipo ou qualidade.</li>
+</ul>
+<h2 id="processar-som">Processar Som</h2>
+<ul>
+<li>Audição humana tem um alcance de 20Hz a 15kHz;</li>
+<li>Em baixas frequências, nós conseguimos detetar diferenças de 1.5Hz;</li>
+<li>Perdemos sensibilidade a altas frequências;</li>
+<li>O cérebro é eficaz a filtrar sons;</li>
+<li>Existem ilusões auditorias.</li>
+</ul>
+<h1 id="interpreta%c3%a7%c3%a3o-de-sinais-h%c3%a1pticos">Interpretação de Sinais Hápticos</h1>
+<h2 id="o-toque-humano">O Toque Humano</h2>
+<ul>
+<li>
+<p>Também conhecido como &quot;sensação háptica&quot;;</p>
+</li>
+<li>
+<p>Normalmente utilizado como <em>feedback</em>:</p>
+<ul>
+<li>Premir teclas quando escrevemos;</li>
+<li>Sentir a localização do rato (cinestésica);</li>
+</ul>
+</li>
+<li>
+<p>Em equipamentos eletrónicos: vibrações.</p>
+<ul>
+<li>Estímulos através de recetores na pele:</li>
+<li>Mecano—recetores (pressão);</li>
+<li>Termo—recetores (calor);</li>
+<li>Nocio—recetores (dor ou pressão intensa).</li>
+</ul>
+</li>
+<li>
+<p>Sensibilidade heterogénea — a ponta do dedo é cerca 10 vezes mais sensível do que o antebraço.</p>
+</li>
+</ul>
+<h1 id="movimento">Movimento</h1>
+<ul>
+<li>
+<p>O movimento é composto por duas caracteristicas essenciais:</p>
+<ul>
+<li>Rapidez;</li>
+<li>Precisão.</li>
+</ul>
+</li>
+<li>
+<p>Tempo de reação depende de duas coisas:</p>
+<ul>
+<li>Tempo de processamento;</li>
+<li>Tempo de movimento.</li>
+</ul>
+</li>
+<li>
+<p>Tempo necessário para responder a um estímulo:</p>
+<ul>
+<li>Tempo de reação + Tempo do movimento;</li>
+</ul>
+</li>
+<li>
+<p>O tempo de reação <strong>depende do tipo do estímulo</strong>:</p>
+<ul>
+<li><strong>Auditório</strong> — ~150ms;</li>
+<li><strong>Visual</strong> — ~200ms;</li>
+<li><strong>Dor</strong> — ~700ms.</li>
+</ul>
+</li>
+<li>
+<p>Todos os estímulos em conjunto resultam num melhor tempo de reação.</p>
+</li>
+</ul>
+<hr>
+<h2 id="lei-de-fitt-1954">Lei de Fitt (1954)</h2>
+<p>Descreve o tempo necessário a atingir um alvo no ecrã:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>t</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>∗</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>D</mi><mi mathvariant="normal">/</mi><mi>S</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Mt = a + b * log_2(D/S+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">Mt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">t</span></span></span></span> — tempo de movimento;</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span></span></span></span> — constantes empíricas;</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> — distância até alvo;</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span> —  tamanho do alvo.</li>
+</ul>
+<p><strong>Regra</strong>: alvos devem ser o maior possível e as distâncias devem ser as menores possíveis.</p>
+<h2 id="lei-de-hick-1952">Lei de Hick (1952)</h2>
+<p>Calcula o tempo requerido para selecionar uma opção entre várias opções:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mo>=</mo><mi>b</mi><mo>∗</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T = b * log_2(n+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> — tempo necessário para escolher uma opção;</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> — constante empírica;</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> — número de possibilidades.</li>
+</ul>
+<p><strong>Regra</strong>: apresentar sempre o número adquado de alvos.</p>
+<hr>
+<h1 id="mem%c3%b3ria">Memória</h1>
+<ul>
+<li>Armazena factos, procedimentos e ações;</li>
+<li>Conceptualmente  dividida em três tipos;
+<ul>
+<li>Memória sensorial;</li>
+<li>Memória a curto prazo — STM (<em>Short Term Memory</em>);</li>
+<li>Memória a longo prazo — LTm (<em>Long Term Memory</em>).</li>
+</ul>
+</li>
+</ul>
+<h2 id="mem%c3%b3ria-sensorial">Memória Sensorial</h2>
+<ul>
+<li>
+<p><em>Buffer</em> para os estímulos recebidos pelos sentidos:</p>
+<ul>
+<li>Memória icónica — estímulos visuais;</li>
+<li>Memória ecoica — estímulos auditivos;</li>
+<li>Memória háptica — estímulo tátil;</li>
+</ul>
+</li>
+<li>
+<p>Estes <em>buffers</em> estão constantemente a ser <em>overwritten</em>;</p>
+</li>
+<li>
+<p>Memória sensorial é transferida para a memória a curto prazo, através de atenção;</p>
+</li>
+<li>
+<p><strong>Atenção</strong> — o ato de foco num dado item ao filtrar os restantes <em>inputs</em> recebidos naquele momento.</p>
+</li>
+<li>
+<p>Sem este filtro, nós ficaríamos sobrecarregados com informação.</p>
+</li>
+</ul>
+<h2 id="mem%c3%b3ria-a-curto-prazo-stm">Memória a Curto Prazo (STM)</h2>
+<ul>
+<li>
+<p>Serve de &quot;bloco de notas&quot; para memória temporária, utilizada:</p>
+<ul>
+<li>Quando lemos;</li>
+<li>Em cálculos mentais.</li>
+</ul>
+</li>
+<li>
+<p>Armazenamento temporário:</p>
+<ul>
+<li>Acesso rápido, acesso em 70ms;</li>
+<li>Degradação rápida, em 200ms;</li>
+<li>Capacidade muito limitada.</li>
+</ul>
+</li>
+<li>
+<p>Em média cada pessoa consegue lembrar-se de 7 ± 2 itens na sua memória de curto prazo.</p>
+</li>
+<li>
+<p><strong>Chuncking</strong> — divisão em partes mais pequenas e fáceis de relembrar — aumenta a eficiência do uso da memória.</p>
+</li>
+</ul>
+<h2 id="mem%c3%b3ria-a-longo-prazo-ltm">Memória a Longo Prazo (LTM)</h2>
+<ul>
+<li>
+<p>Repositório para todo o nosso conhecimento:</p>
+<ul>
+<li>Acesso lento, cerca de 100ms;</li>
+<li>Degradação lenta;</li>
+<li>Grande capacidade de armazenamento.</li>
+</ul>
+</li>
+<li>
+<p>Existem dois tipos:</p>
+<ul>
+<li><strong>Episódica</strong> — memoriza sequências de eventos (episódios);</li>
+<li><strong>Semântica</strong> — memoriza factos estruturados, conceitos, habilidades, etc.</li>
+</ul>
+</li>
+<li>
+<p>LTM Semântica deriva de LTM episódica.</p>
+</li>
+</ul>
+<h3 id="estrutura-de-mem%c3%b3ria-sem%c3%a2ntica">Estrutura de Memória Semântica</h3>
+<ul>
+<li>Facilita a recuperação de informação;</li>
+<li>Representa a relação entre duas unidades de informação;</li>
+<li>Suporta inferência e generalização.</li>
+</ul>
+<h3 id="modelos-de-ltm">Modelos de LTM</h3>
+<h4 id="rede-sem%c3%a2ntica">Rede Semântica</h4>
+<ul>
+<li>Herança — conceitos derivados herdam propriedades dos conceitos pai;</li>
+<li>Definem a relação entre unidades de informação;</li>
+<li>Permite inferência através de herança;</li>
+<li>Conhecimento é organizado por associação.</li>
+</ul>
+<h4 id="frames"><em>Frames</em></h4>
+<ul>
+<li>Estrutura organizada em estruturas de dados;</li>
+<li>Aberturas na estrutura são instanciadas com valores por instância de dados;</li>
+<li>Relações de tipos—subtipos;</li>
+<li>Extensão de redes semânticas com informação mais detalhada.</li>
+<li></li>
+</ul>
+<h4 id="regras">Regras</h4>
+<ul>
+<li>Representação de conhecimento processual;</li>
+<li>Regras <code>if (condition) then (action1) else (action2)</code>.</li>
+</ul>
+<h3 id="recupera%c3%a7%c3%a3o">Recuperação</h3>
+<h4 id="recordar">Recordar</h4>
+<ul>
+<li>Informação reproduzida de memória pode ser assistida por pistas (e.g. categorias, imagens);</li>
+<li>Informação concreta é mais fácil de relembrar.</li>
+</ul>
+<h4 id="reconhecimento">Reconhecimento</h4>
+<ul>
+<li>A informação fornece dicas reconhecíveis;</li>
+<li>Menos complexo do que recuperação.</li>
+</ul>
+<h3 id="armazenamento-de-informa%c3%a7%c3%a3o">Armazenamento de informação</h3>
+<ul>
+<li>Palavras não familiares são <strong>substituídas</strong>;</li>
+<li>Refamiliarizar novos conceitos de modo a assimila-los nas estruturas existentes.</li>
+</ul>
+<h3 id="esquecimento">Esquecimento</h3>
+<h4 id="decad%c3%aancia">Decadência</h4>
+<ul>
+<li>Informação é perdida gradualmente;</li>
+<li>Ebbinghaus diz que é logarítmica;</li>
+<li>Para duas memórias igualmente fortes, a mais antiga vai durar mais.</li>
+</ul>
+<h4 id="interfer%c3%aancia">Interferência</h4>
+<ul>
+<li>Novas informações substituem as mais antigas — <strong>interferência retroativa</strong>;</li>
+<li>Memórias antigas podem interferir com novas — <strong>inibição retroativa</strong></li>
+<li>Pode ser possível as memórias não estarem esquecidas, a memória é seletiva e tem um <em>bias</em> para memórias positivas — <strong>nostalgia</strong></li>
+</ul>
+<h3 id="transfer%c3%aancias-de-mem%c3%b3ria">Transferências de Memória</h3>
+<ul>
+<li><strong>Ensaio</strong> — memória é transferida de STM para LTM</li>
+<li><strong>Hipótese do tempo total</strong> — quantidade retida é proporcional ao tempo de ensaio;</li>
+<li><strong>Distribuição do efeito de prática</strong> — Otimizado ao distribuir a aprendizagem ao longo do tempo;</li>
+<li><strong>Estrutura, significado e familiaridade</strong> — é mais fácil relembrar conceitos de que objetos.</li>
+</ul>
+
+    </body>
+    </html>

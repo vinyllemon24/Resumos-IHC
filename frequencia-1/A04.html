@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 4</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="aula-4">Aula 4</h1>
+<ul>
+<li><a href="#aula-4">Aula 4</a></li>
+<li><a href="#propriedades-e-liga%c3%a7%c3%b5es-din%c3%a2micas-em-javafx">Propriedades e Ligações Dinâmicas em JavaFX</a>
+<ul>
+<li><a href="#interface-java">Interface Java</a></li>
+<li><a href="#interface-java-e-gui-events">Interface Java e GUI <em>Events</em></a></li>
+<li><a href="#fun%c3%a7%c3%b5es-lambda">Funções Lambda</a></li>
+<li><a href="#observadores-e-observados">Observadores e Observados</a></li>
+<li><a href="#propriedades-e-liga%c3%a7%c3%b5es">Propriedades e Ligações</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="propriedades-e-liga%c3%a7%c3%b5es-din%c3%a2micas-em-javafx">Propriedades e Ligações Dinâmicas em JavaFX</h1>
+<h2 id="interface-java">Interface Java</h2>
+<ul>
+<li>
+<p>Uma interface é uma proto classe que agrega um conjunto de métodos abstrators;</p>
+</li>
+<li>
+<p>Define um protocolo geral de ação a ser detalhado e implementado por classes no futuro;</p>
+</li>
+<li>
+<p>Amplamente utilizadas no tratamento de eventos nas interfaces gráficas.</p>
+</li>
+<li>
+<p>Definidos com o prefixo opcional <code>abstract</code> ou em alternativa <code>default</code>, no último caso teremos de fonecer uma implementação;</p>
+</li>
+<li>
+<p>Exemplo:</p>
+</li>
+</ul>
+<pre><code><div>interface NomeI{
+    metodo1(...);
+    metodo2(...);
+    ...
+    metodoN(...);
+}
+
+class NomeC implements NomeI{
+    metodo1(...){...}
+    metodo2(...){...}
+    ...
+    metodoN(...){...}
+}
+</div></code></pre>
+<h2 id="interface-java-e-gui-events">Interface Java e GUI <em>Events</em></h2>
+<ul>
+<li>
+<p>No tratamento de eventos de interfaces gráficas uma <strong>componente</strong> informa um <em><strong>listener</strong></em> de algo que sucedeu;</p>
+</li>
+<li>
+<p><em><strong>Listener</strong></em> é a implementação de uma interface Java especificando a resposta ao evento correspondente;</p>
+</li>
+<li>
+<p>O <em>listener</em> terá de ficar registado na <em>component</em> correspondente, ex.: <code>myButton.addListener(...)</code>.</p>
+</li>
+</ul>
+<h2 id="fun%c3%a7%c3%b5es-lambda">Funções Lambda</h2>
+<ul>
+<li>Tentativa de implementação de aspetos de programação funcional;</li>
+<li>Permite definição dinâmica de funções e a sua passagem como arguimento de outra função;</li>
+<li>Um método pode receber tipos primitivos, objetos e funções.</li>
+<li>Exemplo:</li>
+</ul>
+<pre><code><div>(String s) -&gt; {System.out.println(s);}
+
+() -&gt; 47
+</div></code></pre>
+<h2 id="observadores-e-observados">Observadores e Observados</h2>
+<ul>
+<li>
+<p>Infraestruturas de suporte a desenvolvimento MVC (<em>Model View Controller</em>);</p>
+</li>
+<li>
+<p>Quando o estado do observado é alterado o observador é notificado diretamente;</p>
+</li>
+<li>
+<p><code>Observer</code> é uma interface;</p>
+</li>
+<li>
+<p><code>Observable</code> é uma class.</p>
+</li>
+</ul>
+<h2 id="propriedades-e-liga%c3%a7%c3%b5es">Propriedades e Ligações</h2>
+<ul>
+<li>Permite a criação de dependências automáticas entre as propriedades de diferentes objetos.</li>
+</ul>
+
+    </body>
+    </html>
